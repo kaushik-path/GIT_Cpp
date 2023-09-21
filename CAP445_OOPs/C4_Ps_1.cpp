@@ -7,11 +7,11 @@ class Upsc{
     private:
     int resultList[5] = {101,124,135,148,110};
     public:
-    int getresultList(int reg)
+    int getresultList(int regNo)
     {
         for ( int i = 0; i < 5; i++)
         {
-            if (resultList[i]==reg)
+            if (resultList[i]==regNo)
             {
                 return true;
             }
@@ -25,7 +25,7 @@ int main(){
     Upsc R1;
     cout<<"Enter Reg No."<<endl;
     cin>>regNo;
-    bool result= R1.getresultList(regNo);
+    int result= R1.getresultList(regNo);
     if(result==1){
         cout<<"Pass"<<endl;   
     }
