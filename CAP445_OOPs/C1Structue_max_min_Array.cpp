@@ -16,22 +16,22 @@ struct MyStructure
         {
             cout<< num[i]<< " ";
         } 
-            int max=num[0];
+                int max=num[0];
             for ( i = 1; i < 10; i++)
             {
-            if (max<num[i])
-            {
-                max=num[i];
+                if (max<num[i])
+                {
+                    max=num[i];
+                }
             }
-            }
-            int min=num[0];
-            for ( i = 0; i < 10; i++)
-            {
-            if (min>num[i])
-            {
-                min=num[i];
-            }
-            }
+                int min=num[0];
+                for ( i = 0; i < 10; i++)
+                {
+                    if (min>num[i])
+                    {
+                    min=num[i];
+                    }
+                }
         cout<<"Maximun value :"<<max<<endl;
         cout<<"Minimun value :"<<min<<endl;
     } 
