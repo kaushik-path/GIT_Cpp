@@ -16,7 +16,7 @@ public:
         cin>>Emp_Id;
         //cin.ignore; //If want to print full name before Emp ID to ignore the error1
         cout<<"Enter Employee Name"<<endl;
-        cin >> Emp_Name;
+        cin>>Emp_Name;
         //getline(cin,Emp_Name); //For Full Name 
         cout<<"Enter Employee Salary"<<endl;
         cin>>Emp_Sal;

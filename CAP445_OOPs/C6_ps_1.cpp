@@ -1,3 +1,7 @@
+/*
+calling consturctor and destructor
+*/
+
 #include<iostream>
 using namespace std;
 
@@ -22,9 +26,8 @@ class MyClass
     }
 };
 
-
 int main(){
-    
+
     int x, y;
     cin>>x>>y;
     MyClass m1(x,y);
