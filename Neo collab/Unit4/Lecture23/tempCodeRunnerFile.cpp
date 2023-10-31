@@ -1,48 +1,18 @@
-#include <iostream>
-#include <iomanip>
+main() {
+    string str1, str2;
+    int n;
 
-using namespace std;
+    // Input
+    cin >> str1 >> str2 >> n;
 
-class ComplexNumber {
-private:
-    float real;
-    float imaginary;
+    // Create MyString objects
+    MyString myStr1(str1);
+    MyString myStr2(str2);
 
-public:
-    ComplexNumber(float r, float i) : real(r), imaginary(i) {}
-
-    ComplexNumber operator+(const ComplexNumber& other) const {
-        return ComplexNumber(real + other.real, imaginary + other.imaginary);
-    }
-
-    ComplexNumber operator-(const ComplexNumber& other) const {
-        return ComplexNumber(real - other.real, imaginary - other.imaginary);
-    }
-
-    friend ostream& operator<<(ostream& out, const ComplexNumber& num) {
-        if (num.imaginary >= 0) {
-            out << num.real << " + " << num.imaginary << "i";
-        } else {
-            out << num.real << " - " << -num.imaginary << "i";
-        }
-        return out;
-    }
-};
-
-int main() {
-    float real1, imaginary1, real2, imaginary2;
-    cin >> real1 >> imaginary1 >> real2 >> imaginary2;
-
-    ComplexNumber num1(real1, imaginary1);
-    ComplexNumber num2(real2, imaginary2);
-
-    
-    ComplexNumber addition = num1 + num2;
-    ComplexNumber subtraction = num1 - num2;
-
-    
-    cout << addition << endl;
-    cout << subtraction << endl;
+    // Perform operations and display results
+    (myStr1 + myStr2).display();          // Concatenation
+    (myStr1 * n).display();               // First string repeated n times
+    (myStr2 * n).display();               // Second string repeated n times
 
     return 0;
 }
