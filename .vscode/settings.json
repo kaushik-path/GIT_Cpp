@@ -43,7 +43,10 @@
         "vector": "cpp",
         "fstream": "cpp",
         "string": "cpp",
-        "tuple": "cpp"
+        "tuple": "cpp",
+        "map": "cpp",
+        "sstream": "cpp",
+        "xtree": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }
