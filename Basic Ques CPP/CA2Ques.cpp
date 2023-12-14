@@ -18,3 +18,8 @@ cout<< "Negative numbers = "<<nn<<endl;
 cout<< "Positive numbers = "<<pn;
 return 0;
 }
+
+// 1 2 3 -1 -3-5
+//out
+//3 
+//3
